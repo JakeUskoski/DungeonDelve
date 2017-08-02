@@ -6,22 +6,26 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
-public class GuildTitle {
-
+public class Skill {
+	
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long id;
 	
-	private Guild guild;
 	private String name;
-	private Long position;
 	
-	protected GuildTitle() {
+	private String effect;
+	
+	private Double baseValue;
+	private Double multiplier1;
+	private String multiplierStat1;
+	private Double multiplier2;
+	private String multiplierStat2;
+	
+	protected Skill() {
 	}
 	
-	public GuildTitle(Guild guild, String name, Long position) {
-		this.guild = guild;
+	public Skill(String name) {
 		this.name = name;
-		this.position = position;
 	}
 }

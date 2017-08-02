@@ -28,14 +28,14 @@ public class Player
 	private Title title;
 	
 	//Stats
-	private long strength;
-	private long constitution;
-	private long endurance;
-	private long dexterity;
-	private long intellect;
-	private long wisdom;
-	private long charisma;
-	private long unassigned;
+	private Long strength;
+	private Long constitution;
+	private Long endurance;
+	private Long dexterity;
+	private Long intellect;
+	private Long wisdom;
+	private Long charisma;
+	private Long unassigned;
 	
 	private CombatStats combatStats;
 	
@@ -52,7 +52,7 @@ public class Player
 	
 	private Location location;
 	
-	private long Gold;
+	private Long Gold;
 	
 	protected Player()
 	{

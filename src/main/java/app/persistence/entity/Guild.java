@@ -18,7 +18,7 @@ public class Guild {
 	
 	private Set<Player> members;
 	
-	private long gold;
+	private Long gold;
 	
 	private GuildAchievementStats guildAchievementStats;
 	

@@ -1,27 +1,29 @@
 package app.persistence.entity;
 
+import java.util.Set;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
-public class GuildTitle {
+public class Location {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long id;
 	
-	private Guild guild;
 	private String name;
-	private Long position;
+	private Set<Location> connections;
+	private Set<Place> places;
 	
-	protected GuildTitle() {
+	protected Location() {
 	}
 	
-	public GuildTitle(Guild guild, String name, Long position) {
-		this.guild = guild;
+	public Location(String name, Set<Location> connections, Set<Place> places) {
 		this.name = name;
-		this.position = position;
+		this.connections = connections;
+		this.places = places;
 	}
 }

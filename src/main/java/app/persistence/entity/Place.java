@@ -6,22 +6,20 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
-public class GuildTitle {
+public class Place {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long id;
 	
-	private Guild guild;
 	private String name;
-	private Long position;
+	private Long type;
 	
-	protected GuildTitle() {
+	protected Place() {
 	}
 	
-	public GuildTitle(Guild guild, String name, Long position) {
-		this.guild = guild;
+	public Place(String name, Long type) {
 		this.name = name;
-		this.position = position;
+		this.type = type;
 	}
 }

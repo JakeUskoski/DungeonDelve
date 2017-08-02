@@ -12,7 +12,7 @@ public class Ailment {
 	
 	private String name;
 	
-	private double value;
+	private Double value;
 	
 	private String operator;
 	private String stat;
