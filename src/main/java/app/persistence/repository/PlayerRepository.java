@@ -1,10 +1,10 @@
-package app.resource.repository;
+package app.persistence.repository;
 
 import java.util.List;
 
 import org.springframework.data.repository.CrudRepository;
 
-import app.resource.entity.Player;
+import app.persistence.entity.Player;
 
 public interface PlayerRepository extends CrudRepository<Player, Long>
 {

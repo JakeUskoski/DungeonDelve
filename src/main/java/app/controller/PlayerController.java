@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RestController
 public class PlayerController {
 
-    @RequestMapping("/")
+    @RequestMapping("/Player")
     public String index() {
         return "Greetings from Spring Boot!";
     }
