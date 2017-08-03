@@ -9,6 +9,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
+import javax.persistence.OneToOne;
 
 @Entity
 public class Player
@@ -17,8 +18,8 @@ public class Player
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long id;
 	
-	
-	private Long accountId;
+	@OneToOne(mappedBy="account")
+	private Account account;
 	
 	private String name;
 	

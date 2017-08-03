@@ -1,9 +1,9 @@
 package app.persistence.repository;
 
-import org.springframework.data.repository.CrudRepository;
+import org.springframework.data.jpa.repository.JpaRepository;
 
 import app.persistence.entity.AchievementStats;
 
-public interface AchievementStatsRepository extends CrudRepository<AchievementStats, Long>
+public interface AchievementStatsRepository extends JpaRepository<AchievementStats, Long>
 {
 }

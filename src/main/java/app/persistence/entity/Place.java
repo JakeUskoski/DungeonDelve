@@ -14,12 +14,14 @@ public class Place {
 	
 	private String name;
 	private Long type;
+	private Location location;
 	
 	protected Place() {
 	}
 	
-	public Place(String name, Long type) {
+	public Place(String name, Long type, Location location) {
 		this.name = name;
 		this.type = type;
+		this.location = location;
 	}
 }
